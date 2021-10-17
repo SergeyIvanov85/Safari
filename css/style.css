@@ -19,6 +19,12 @@ a{
   margin: 0 auto;
   padding: 0 10px;
 }
+.title{
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+}
 .header{
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
@@ -97,9 +103,9 @@ a{
   padding: 100px 0;
 }
 .direction__inner{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
 }
 .direction__img{
   display: block;
@@ -109,4 +115,56 @@ grid-gap: 32px;
   border: 1px solid #D9D9DE;
   border-top: none;
   padding: 10px 19px 14px;
+}
+.travel-info{
+  background-image: url(../images/travel-info-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 30px 0 50px;
+}
+.travel-info__title{
+  color: #fff;
+  margin-bottom: 50px;
+}
+.travel-info__items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 54px 67px;
+}
+.travel-info__img{
+  margin-bottom: 15px;
+}
+.travel-info__text{
+  color: #fff;
+  font-size: 16px;
+  line-height: 130%;
+}
+.popular{
+  padding: 100px 0;
+}
+.popular__title{
+  margin-bottom: 40px;
+}
+.popular__items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+.popular__link{
+  padding: 16px 24px 19px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 256px;
+}
+.popular__link:nth-child(3),
+.popular__link:nth-child(6){
+  grid-column: span 2;
+  grid-row: span 2;
 }
