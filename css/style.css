@@ -13,6 +13,7 @@ body{
 a{
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 .container{
   max-width: 1140px;
@@ -222,4 +223,21 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.gallery{
+  padding: 50px 0 105px;
+  background: #886239;
+  color: #fff;
+}
+.gallery__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-right: 160px;
+}
+.gallery__link{
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: underline;
 }
